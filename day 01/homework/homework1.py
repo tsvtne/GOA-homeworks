@@ -1,12 +1,12 @@
-name = "tsotne"
+name = "cotne"
 
 surname = "gulbani"
 
-age = 15
+age = 16
 
 height = 1.89
 
-live = "chernobyl"
+live = "tbilisi"
 
 study = "GOA"
 
