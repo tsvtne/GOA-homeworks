@@ -1,0 +1,13 @@
+def opposite (number):
+    return -number
+print(opposite(-1))
+
+
+
+def repeat_str(repeat, string):
+    return repeat * string
+
+
+
+def greet():
+    return"hello world!"

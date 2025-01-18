@@ -1,0 +1,88 @@
+<!-- 1) სამკუთხდები დამიხაზეთ 120 ცალი ოღონდ მხოლოდ კენტი <3 რიცხვებით ფუქნციების გამოყევებეა არ დაგვავიწყდეს -->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>სამკუთხედები</title>
+    <style>
+        .triangle {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="triangles-container"></div>
+
+    <script>
+        function createTriangle(index) {
+            const triangle = document.createElement("div");
+            triangle.classList.add("triangle");
+           
+            if (index % 2 === 1) {
+                triangle.style.borderBottom = "100px solid green";
+            } else {
+                triangle.style.borderBottom = "100px solid blue";
+            }
+            return triangle;
+        }
+        function generateTriangles() {
+            const container = document.getElementById("triangles-container");
+
+            for (let i = 1; i <= 120; i++) {
+                const triangle = createTriangle(i);
+                container.appendChild(triangle);
+            }
+        }
+        generateTriangles();
+    </script>
+
+</body>
+</html>
+
+<!-- თუ ჩვენი სამკუთხედი დამეთხვევა კენტ index მაში ნ სამკუთხედი იყოს მწვანე თუ არა და იყოსლურჯი
+2) hello_world-როცა დავწერთ გამოვიტანოს print() 
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+</head>
+<body>
+
+    <input type="text" id="userInput" placeholder="whrite hello_world">
+    <button onclick="checkInput()">click</button>
+    <p id="output"></p>
+
+    <script>
+        function checkInput() {
+            const userInput = document.getElementById("userInput").value;
+            const output = document.getElementById("output");
+            
+            if (userInput === "hello_world") {
+                output.textContent = "print()";  
+            } else {
+                output.textContent = "incorrect!";
+            }
+        }
+    </script>
+
+</body>
+</html>
+
+3) def-ის გამოყენბით შემქენით ფუქნცია even_or_odd() შევამოწმოთ ჩვენი გამდოცემული არგუმენტი/ მაგალითილითად even_or_odd(23) არის თუ არა კენტი თუ არის დვაწეროთ "კი არის კენტი" თუ არა "არ არის კენტი"
+def even_or_odd(number):
+    if number % 2 == 0:
+        print("კი არის კენტი")
+    else:
+        print("არ არის კენტი")
+even_or_odd(23)
+
+
+

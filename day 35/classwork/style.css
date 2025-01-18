@@ -1,0 +1,21 @@
+/* @import url(https://fonts.google.com/specimen/DM+Serif+Text);
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    background-image: url(nadiri\ var.jpg);
+    background-size: cover;
+    font-family: serif;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+
+def digitize(n):
+    digits = []
+    for digit in str(n)[::-1]:
+    digits.append(int(digit))
+    return digits
+
+    print(digitize(1325))

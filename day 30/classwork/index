@@ -1,0 +1,6 @@
+def highest_and_lowest(str):
+    str = list(int, str.split())
+    highest = max(str)
+    lowest= min(str)
+    return f"{highest} {lowest}"
+print(highest_and_lowest("1, 2, 3, 4, 5"))
