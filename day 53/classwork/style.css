@@ -1,0 +1,19 @@
+@import url();
+.font-primary{
+    font-family:monospace ;
+}
+.font-secondary{
+    font-family: fantasy;
+}
+.font-medium{
+    font-weight: 500;
+}
+.font-bold{
+    font-weight: 700;
+}
+.text-black{
+    color: black;
+}
+.text-green{
+    color: green;
+}
